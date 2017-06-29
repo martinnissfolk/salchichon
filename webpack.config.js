@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/helloworld.ts',
+  entry: './src/main.ts',
   resolve: {
         extensions: ['.webpack.js', '.web.js', '.js', '.ts']
   },

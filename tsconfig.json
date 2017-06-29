@@ -9,7 +9,7 @@
     "allowJs": true
   },
   "files": [
-        "src/helloworld.ts",
+        "src/main.ts",
         "src/Color.ts"
         
     ]
