@@ -1,3 +1,9 @@
+## Salchichon
+
+A simple demo of typescript with webpack
+
+### Installation
+
 first install the necessary dependencies:
 
     npm install
