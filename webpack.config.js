@@ -2,7 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/main.ts',
+  entry: {
+     app: ['./src/main.ts']
+  },  
   resolve: {
         extensions: ['.webpack.js', '.web.js', '.js', '.ts']
   },
@@ -15,15 +17,11 @@ module.exports = {
      }
    ]
  },
- output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: './dist/'
- },
- devServer: {
-   contentBase: './dist/',
-   publicPath: './dist/'
- },
+ output: {    
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/build/',
+    filename: 'bundle.js'
+ }, 
  // Enable sourcemaps for debugging webpack's output.
  devtool: 'source-map',
  
